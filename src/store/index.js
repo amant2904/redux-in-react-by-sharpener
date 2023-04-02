@@ -11,14 +11,14 @@ const counterReducer = (state = { counter: 0 }, action) => {
             counter: state.counter - 1,
         }
     }
-    else if (action.type === "incrementBy2") {
+    else if (action.type === "incrementByFive") {
         return {
-            counter: state.counter + 2,
+            counter: state.counter + 5,
         }
     }
-    else if (action.type === "decrementBy2") {
+    else if (action.type === "decrementByFive") {
         return {
-            counter: state.counter - 2,
+            counter: state.counter - 5,
         }
     }
     return state;
